@@ -1,0 +1,142 @@
+@import url('reset.css');
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+/*======================================================================GENERALES=======================================================================*/
+body{
+	min-height: 100vh;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	color: #fff;
+	font-size: 24px;
+}
+.wrapper {
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1400px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding: 0 20px;
+	justify-content: space-between;
+}
+@media (max-width:1200){
+	.container {
+		max-width: 992px;
+	}
+}
+@media (max-width:992px){
+	.container {
+		max-width: 768px;
+	}
+}
+@media (max-width:768px){
+	.container {
+		max-width: 576px;
+	}
+	body{
+		font-size: 20px;
+	}
+}
+/*=====================================================================HEADER===========================================================================*/
+.header {
+	height: 130px;
+	background-color: #E17E7E;
+	text-transform: uppercase;
+}
+.block1 {
+	display: flex;
+	align-items: center;
+}
+.navbar {
+	display: flex;
+}
+.navbar li{
+	margin-right: 38px;
+}
+.navbar li:last-child{
+	margin-right: 0px;
+}
+.block2 {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+@media (max-width:768px){
+	.navbar{
+		display: none;
+	}
+	.header{
+		height: 80px;
+		font-size: 16px;
+	}
+}
+/*===========================================================================MAIN=======================================================================*/
+.main {
+	padding-top: 65px;
+	padding-left: 85px;
+	flex-grow: 1;
+	background: url('../image/Death-Stranding-Fan-Poster 1.png') center no-repeat;
+	background-size: 100% 100%;
+}
+#f{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.form {
+	text-align: left;
+	border: 3px solid #fff;
+	border-radius: 20px;
+	background-color: #E17E7E;
+	padding: 55px 52px;
+	margin-bottom: 25px;
+}
+.name{
+	margin-bottom: 10px;
+}
+.inp{
+	background-color: transparent;
+	border-bottom: 2px solid #FFF;
+	margin-bottom: 25px;
+}
+.btn{
+	cursor: pointer;
+	width: 300px;
+	height: 80px;
+	color: #fff;
+	background-color: #E17E7E;
+	border: 5px solid #fff;
+	border-radius: 50px;
+}
+@media (max-width:768px){
+	.main{
+		padding-top: 50px;
+		padding-left: 0px;
+		display: flex;
+		justify-content: center;
+		background-size: cover;
+	}
+	.form{
+		padding: 50px 45px;
+		margin-bottom: 90px;
+	}
+}
+/*============================================================================FOOTER====================================================================*/
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+	background-color: #E17E7E;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+@media (max-width:768px){
+	.footer{
+		height: 90px;
+		font-size: 24px;
+	}
+}
