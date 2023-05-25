@@ -1,0 +1,79 @@
+@import url(reset.css);
+body{
+	height: 100vh;
+}
+ul{
+	display: flex;
+}
+.page {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+min-height: 100%;
+}
+.content{
+	flex-grow: 1;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+a {
+  color: white;
+}
+.header, footer {
+  background-color: black;
+  color: white;
+  height: 60px;
+}
+
+.header {
+  font-size: 14px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.logo {
+  font-size: 20px;
+  width: 200px;
+  display: block;
+  float: left;
+}
+.menu {
+  font-size: 16px;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 5px;
+  display: block;
+}
+
+.columns {
+  font-size: 14px;
+  display: flex;
+  height: auto;
+}
+
+.left {
+  width: 200px;
+  background-color: black;
+  padding: 20px;
+  font-size: 16px;
+  vertical-align: top;
+  margin-right: 15px;
+}
+.right {
+  width: 590px;
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.left a {
+  margin-top: 5px;
+  display: block;
+}
